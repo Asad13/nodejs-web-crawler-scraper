@@ -1,0 +1,9 @@
+.husky
+.vscode
+node_modules
+dist
+pnpm-lock.yaml
+coverage
+.env
+logs
+**/*.log

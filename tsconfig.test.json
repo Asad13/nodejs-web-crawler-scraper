@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    /* ✅ Enable Source Maps for Debugging */
+    "sourceMap": true,
+
+    /* ✅ Allow Test Files */
+    "noEmit": true,
+    "isolatedModules": true,
+
+    /* ✅ Adjust Paths for Jest */
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+
+  /* ✅ Include Test Files */
+  "include": ["src", "__tests__"]
+}

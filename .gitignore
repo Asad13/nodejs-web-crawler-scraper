@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+lerna-debug.log
+.log
+logs/
+*.log
+
+# Misc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.eslintcache
+tsconfig.base.json

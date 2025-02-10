@@ -1,0 +1,58 @@
+{
+  "name": "nodejs-web-crawler-scraper",
+  "version": "1.0.0",
+  "description": "A web crawler and scraper using Typescript(Javascript)",
+  "main": "dist/server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Asad13/nodejs-web-crawler-scraper.git"
+  },
+  "author": {
+    "name": "Asad Mujumder",
+    "email": "asaduzzaman.anik.me@gmail.com",
+    "url": "https://asad13.github.io"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env dist/server.js",
+    "dev": "tsx watch --env-file-if-exists=.env --tsconfig tsconfig.json src/server.ts",
+    "build": "tspc --project tsconfig.json",
+    "lint": "eslint ./src --max-warnings 0 --report-unused-disable-directives",
+    "lint:fix": "eslint ./src --fix",
+    "format": "prettier --write --ignore-unknown",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.--ignore-unknown": "prettier --write"
+  },
+  "keywords": [
+    "nodejs",
+    "web-crawler",
+    "crawler",
+    "web-scraper",
+    "scraper",
+    "puppeteer",
+    "headless-browser"
+  ],
+  "engines": {
+    "node": ">=22.13.1",
+    "pnpm": ">=10.2.0"
+  },
+  "dependencies": {
+    "puppeteer": "^24.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.1",
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.5.0",
+    "ts-patch": "^3.3.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0",
+    "typescript-transform-paths": "^3.5.3"
+  }
+}
